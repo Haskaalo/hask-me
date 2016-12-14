@@ -1,0 +1,11 @@
+<div class="ui compact menu">
+  <div class="ui simple dropdown item">
+    Select your region
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">Americas</div>
+      <div class="item">Europe</div>
+      <div class="item">Asia</div>
+    </div>
+  </div>
+</div>
