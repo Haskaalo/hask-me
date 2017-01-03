@@ -12,7 +12,7 @@ or read [here](http://semantic-ui.com/introduction/getting-started.html])
 2. `cd semantic/` and run `gulp build`
 
 ## A thing every page? I guess
-** Code for semantic to run **
+**Code for semantic to run**
 
 ```html
 <script
