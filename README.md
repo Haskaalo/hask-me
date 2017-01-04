@@ -19,10 +19,7 @@ Place it in head I guess
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <script src="semantic/dist/semantic.min.js"></script>```
 
-## To do list (might not be accurate af)
+and thats it
 
-1. Make index.html better
-2. Finish User templace
-3. Maybe make the project run a server with [this](https://github.com/SunDwarf/OWAPI) *maybe*
-4. develop a user generator page generator?
-5. Make index.html and user.html connected to a script or the OWAPI?
+## Test
+**test**
