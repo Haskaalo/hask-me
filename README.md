@@ -13,17 +13,16 @@ or read [here](http://semantic-ui.com/introduction/getting-started.html])
 
 ## A thing every page? I guess
 **Code for semantic to run**
+Place it in head I guess
 
 ```html
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <script src="semantic/dist/semantic.min.js"></script>```
 
+## To do list (might not be accurate af)
+
+1. Make index.html better
+2. Finish User templace
+3. Maybe make the project run a server with [this](https://github.com/SunDwarf/OWAPI) *maybe*
+4. develop a user generator page generator?
+5. Make index.html and user.html connected to a script or the OWAPI?
