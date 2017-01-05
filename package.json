@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "request": "^2.79.0",
     "semantic-ui": "^2.2.6"
   },
   "devDependencies": {},

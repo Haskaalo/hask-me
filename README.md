@@ -25,7 +25,7 @@ and thats it
 ## To do list (might not be accurate af)
 
 1. Make index.html better
-2. Finish User templace
+2. Finish User template (also with stats.js)
 3. Maybe make the project run a server with [this](https://github.com/SunDwarf/OWAPI) *maybe*
 4. develop a user generator page generator?
 5. Make index.html and user.html connected to a script or the OWAPI?
