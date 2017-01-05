@@ -1,4 +1,4 @@
-// NOT COMPLETED
+// NOT COMPLETED (pls fix it)
 function search() {
 var request = require('request');
 var battletag = document.getElementById("searchinput").value;
@@ -16,6 +16,7 @@ var data = JSON.parse(body);
         var games_lost = "Game(s) lost" + data.overall_stats.losses
         var winrate = "Winrate: " + data.overall_stats.win_rate
     }
+    console.log("If you see this, it might have work...");
     else if (!error && response.statusCode == 404) {
       window.location.assign(./notfound.html)
     }
