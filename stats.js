@@ -15,10 +15,10 @@ var data = JSON.parse(body);
         var games_won = "Game(s) won: " + data.overall_stats.wins
         var games_lost = "Game(s) lost" + data.overall_stats.losses
         var winrate = "Winrate: " + data.overall_stats.win_rate
+        console.log("If you see this, it might have work...");
     }
-    console.log("If you see this, it might have work...");
     else if (!error && response.statusCode == 404) {
-      window.location.assign(./notfound.html)
+      // put some  shit here
     }
 });
 }
