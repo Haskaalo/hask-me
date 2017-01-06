@@ -18,7 +18,7 @@ var data = JSON.parse(body);
         console.log("If you see this, it might have work...");
     }
     else if (!error && response.statusCode == 404) {
-      // put some  shit here
+      window.location.assign('./notfound.html');
     }
 });
 }
