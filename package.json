@@ -1,11 +1,11 @@
 {
-  "name": "project-owstats",
+  "name": "hask-me",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hello! Our website is running [here](https://hask.me/)",
+  "main": "stats.js",
   "dependencies": {
     "request": "^2.79.0",
-    "semantic-ui": "^2.2.6"
+    "semantic-ui": "^2.2.7"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Haskaalo/project-owstats.git"
+    "url": "git+https://github.com/Haskaalo/hask-me.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Haskaalo",
+  "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/Haskaalo/project-owstats/issues"
+    "url": "https://github.com/Haskaalo/hask-me/issues"
   },
-  "homepage": "https://gitlab.com/Haskaalo/project-owstats#README"
+  "homepage": "https://github.com/Haskaalo/hask-me#readme"
 }
