@@ -1,7 +1,7 @@
 // NOT COMPLETED (pls fix it)
+ var request = require('request');
 function search() {
-var request = require('request');
-var battletag = document.getElementById("searchinput").value;
+var battletag = document.getElementById("search").value;
  var replace = battletag.replace('#', '-') // pls replace result.battletag with input from index.html(currently dont know how)
 request('https://owapi.net/api/v2/u/' + replace + '/stats/competitive', function(error, response, body) { // might need to change with our own server
     if (!error && response.statusCode == 200) {
