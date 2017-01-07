@@ -9,7 +9,7 @@ var data = JSON.parse(body);
         var user = "Looked for: " + battletag
         var levelreall = data.overall_stats.prestige * 100 + data.overall_stats.level
 		var userlevel = "Level: " + levelreall
-        var comprank = data.overall_stats.comprank + " SR"
+        var comprank = "Current Season Rank: " + data.overall_stats.comprank + " SR"
         var total_game = "Total of game(s) played: " + data.overall_stats.games + " SR"
         var games_won = "Game(s) won: " + data.overall_stats.wins
         var games_lost = "Game(s) lost: " + data.overall_stats.losses
@@ -28,7 +28,6 @@ var data = JSON.parse(body);
     }
     else if (!error && response.statusCode == 404) {
       document.getElementById("not_found").innerHTML = "Did not found the user";
-	  console.log("test")
     }
 });
 }
