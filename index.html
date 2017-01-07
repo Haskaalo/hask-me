@@ -2,13 +2,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <script src="semantic/dist/semantic.min.js"></script>
-<title>hask.me [WIP]</title>
+<title>hask.me :)</title>
 <style>
 
     </style>
 </head>
 <body>
-  <!-- step thing from http://semantic-ui.com/elements/step.html and http://semantic-ui.com/elements/icon.html-->
+
 <div class="fullscreen-bg">
     <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
         <source src="./backgroundvid.mp4" type="video/mp4">
@@ -26,14 +26,24 @@
   <h2 class="ui header">Find:</h2>
 <div class="ui right action left icon input">
   <i class="search icon"></i>
-  <input type="text" id="search" placeholder="Search">
+  <input type="text" id="search" placeholder="Battle#Tag">
 <button class="ui button" onclick="search()">
   Go!
 </button>
 </div>
+<p id="battletag"></p>
+<p id="level"></p>
+<p id ="comprank"></p>
+<p id ="totalgame"></p>
+<p id ="gamewon"></p>
+<p id ="gamelost"></p>
+<p id ="winrate"></p>
+<small>hask.me is a simple website to get easy overall stats of Overwatch player</small>
+<br>
+<a href="https://github.com/Haskaalo">Wish to know more about me?</a>
 </div>
-<!-- some video thing background -->
-<!-- you got some style ;) -->
+
+
  <style>
 
 
@@ -73,7 +83,6 @@
     left: -100%;
   }
 }
-
 @media (max-width: 767px) {
   .fullscreen-bg {
     background: url('https://haskaalo.github.io/videoplayback.mp4') center center / cover no-repeat;
@@ -86,6 +95,9 @@
 h1 {
     font-size: 550%;
     text-align: center;
+}
+small {
+text-align: center;
 }
 
   </style>
