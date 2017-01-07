@@ -22,3 +22,4 @@ var data = JSON.parse(body);
     }
 });
 }
+window.search = search;
