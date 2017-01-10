@@ -59535,7 +59535,7 @@ module.exports={
         "spec": ">=2.3.0 <2.4.0",
         "type": "range"
       },
-      "C:\\Users\\Haska\\Documents\\hask-me\\node_modules\\request"
+      "C:\\Users\\Haska\\Documents\\hask-me\\node_modules\\less\\node_modules\\request"
     ]
   ],
   "_from": "tough-cookie@>=2.3.0 <2.4.0",
@@ -59563,13 +59563,13 @@ module.exports={
     "type": "range"
   },
   "_requiredBy": [
-    "/request"
+    "/less/request"
   ],
   "_resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.3.2.tgz",
   "_shasum": "f081f76e4c85720e6c37a5faced737150d84072a",
   "_shrinkwrap": null,
   "_spec": "tough-cookie@~2.3.0",
-  "_where": "C:\\Users\\Haska\\Documents\\hask-me\\node_modules\\request",
+  "_where": "C:\\Users\\Haska\\Documents\\hask-me\\node_modules\\less\\node_modules\\request",
   "author": {
     "name": "Jeremy Stashewsky",
     "email": "jstashewsky@salesforce.com"
@@ -62682,7 +62682,8 @@ var data = JSON.parse(body);
         var games_won = "Game(s) won: " + data.overall_stats.wins
         var games_lost = "Game(s) lost: " + data.overall_stats.losses
         var winrate = "Winrate: " + data.overall_stats.win_rate + "%"
-
+        
+        document.getElementById("not_found").innerHTML = "";
 		document.getElementById("battletag").innerHTML = user;
 		document.getElementById("level").innerHTML = userlevel;
 		document.getElementById("comprank").innerHTML = comprank;
@@ -62694,11 +62695,11 @@ var data = JSON.parse(body);
 
         console.log("Looked for: " + battletag);
     }
-    else if (!error && response.statusCode == 404) {
-      document.getElementById("not_found").innerHTML = "Did not found the user";
-    }
+    else request('error', function(err) {
+      console.log(err)
+      document.getElementById("not_found").innerHTML = "Did not found " + battletag + " , check spelling to make sure no mistake has been made";
+    })
 });
 }
 window.search = search;
-
 },{"request":243}]},{},[296]);

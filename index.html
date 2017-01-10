@@ -32,7 +32,7 @@
   <i class="search icon"></i>
   <input type="text" id="search" placeholder="Battle#Tag">
 <button class="ui button" onclick="search()">
-  Go!
+  Search
 </button>
 </div>
 <p id="not_found"></p>
@@ -43,14 +43,23 @@
 <p id ="gamewon"></p>
 <p id ="gamelost"></p>
 <p id ="winrate"></p>
-<small>hask.me is a simple website to get easy overall stats of Overwatch player</small>
+<div id="issue";>
+<small>hask.me is a website to get all overall information about a specified Overwatch player</small>
 <br>
 <a href="https://github.com/Haskaalo/hask-me">Having an issue?</a>
+</div>
 </div>
 
 
  <style>
 
+#issue {
+  text-align: center;
+}
+
+#not_found {
+color: #B72000
+}
 
 .fullscreen-bg {
   position: fixed;
@@ -90,7 +99,7 @@
 }
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('https://haskaalo.github.io/videoplayback.mp4') center center / cover no-repeat;
+    background: url('https://hask.me/backgroundvid.mp4') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
