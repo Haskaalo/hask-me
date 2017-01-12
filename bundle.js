@@ -62669,6 +62669,7 @@ arguments[4][167][0].apply(exports,arguments)
 // NOT COMPLETED (pls fix it)
  var request = require('request');
 function search() {
+    document.getElementById("not_found").innerHTML = ""
   document.getElementById("loading").innerHTML = "Searching..."
 var battletag = document.getElementById("search").value;
  var replace = battletag.replace('#', '-')
@@ -62704,5 +62705,4 @@ var data = JSON.parse(body);
 });
 }
 window.search = search;
-
 },{"request":243}]},{},[296]);

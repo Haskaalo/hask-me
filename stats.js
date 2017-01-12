@@ -1,6 +1,7 @@
 // NOT COMPLETED (pls fix it)
  var request = require('request');
 function search() {
+    document.getElementById("not_found").innerHTML = ""
   document.getElementById("loading").innerHTML = "Searching..."
 var battletag = document.getElementById("search").value;
  var replace = battletag.replace('#', '-')
