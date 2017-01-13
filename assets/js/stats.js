@@ -1,11 +1,14 @@
  var request = require('request');
+ var $ = require('jQuery');
 function search() {
     document.getElementById("not_found").innerHTML = ""
   document.getElementById("loading").innerHTML = "Searching..."
 var battletag = document.getElementById("search").value;
+$( "#nombutton" ).replaceWith( "<button class='ui loading button' id='nombutton'>Search</button>" );
  var replace = battletag.replace('#', '-')
 request('https://owapi.net/api/v2/u/' + replace + '/stats/competitive', function(error, response, body) { // Sorry OWAPI :3, ill do my own server one day :3
     if (!error && response.statusCode == 200) {
+        $( "#nombutton" ).replaceWith( "<button class='ui button' id='nombutton' onclick='search()'>Search</button>" );
 var data = JSON.parse(body);
         var user = "Looked for: " + battletag
         var levelreall = data.overall_stats.prestige * 100 + data.overall_stats.level
@@ -31,7 +34,8 @@ var data = JSON.parse(body);
     else request('error', function(err) {
         document.getElementById("loading").innerHTML = ""
       console.log(err)
-      document.getElementById("not_found").innerHTML = "Did not found " + battletag + " , check spelling to make sure no mistake has been made";
+      document.getElementById("not_found").innerHTML = "Did not found " + battletag + ", check spelling to make sure no mistake has been made";
+      $( "#nombutton" ).replaceWith( "<button class='ui button' id='nombutton' onclick='search()'>Search</button>" );
     })
 });
 }
