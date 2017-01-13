@@ -6,14 +6,13 @@ Hello! Our website is running [here](https://hask.me/)
 ## Build it 
 You need Gulp and Node
 
-Install Gulp: `npm install -g gulp`
+
 Install Node: [nodejs](https://nodejs.org/en/)
 
-or read [here](http://semantic-ui.com/introduction/getting-started.html])
+
 1. `cd assets/js/`
-2. `npm install semantic-ui --save` in the directory
-3. Save to `assets/css/`
-4. `cd assets/css/semantic/` and run `gulp build`
+2. `npm install request`
+3. Finish! :D
 
 ## To do list
 
