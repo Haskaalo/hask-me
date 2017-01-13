@@ -1,6 +1,7 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/semantic/dist/semantic.min.css">
+<script src="assets/css/semantic/dist/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   <meta charset="UTF-8">
   <meta name="description" content="hask.me is a website to get all overall information about a specified Overwatch player">
   <meta name="keywords" content="Overwatch,Stats">
@@ -14,8 +15,8 @@
 <body>
 
 <div class="fullscreen-bg">
-    <video loop muted autoplay poster="./backgroundvid.mp4" class="fullscreen-bg__video">
-        <source src="./backgroundvid.mp4" type="video/mp4">
+    <video loop muted autoplay poster="assets/imgs/backgroundvid.mp4" class="fullscreen-bg__video">
+        <source src="assets/imgs/backgroundvid.mp4" type="video/mp4">
     </video>
 </div>
 <div class="ui middle aligned center aligned grid">
@@ -50,76 +51,7 @@
 <a href="https://github.com/Haskaalo/hask-me">Having an issue?</a>
 </div>
 </div>
-
-
- <style>
- #loading {
-   text-align: center;
- }
-
-#issue {
-  text-align: center;
-}
-
-#not_found {
-color: #B72000
-}
-
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-    -webkit-filter: blur(15px);
-  -moz-filter: blur(15px);
-  -o-filter: blur(15px);
-  -ms-filter: blur(15px);
-  filter: blur(15px);
-}
-
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
-}
-@media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('http://hask.me/backgroundvid.mp4') center center / cover no-repeat;
-  }
-
-  .fullscreen-bg__video {
-    display: none;
-  }
-}
-h1 {
-    font-size: 550%;
-    text-align: center;
-}
-small {
-text-align: center;
-}
-
-  </style>
-    	<script src="bundle.js"></script>
+    	<script src="assets/js/bundle.js"></script>
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

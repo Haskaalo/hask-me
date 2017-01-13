@@ -1,4 +1,3 @@
-// NOT COMPLETED (pls fix it)
  var request = require('request');
 function search() {
     document.getElementById("not_found").innerHTML = ""
