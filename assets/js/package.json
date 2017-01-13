@@ -4,6 +4,7 @@
   "description": "Hello! Our website is running [here](https://hask.me/)",
   "main": "stats.js",
   "dependencies": {
+    "jQuery": "^1.7.4",
     "request": "^2.79.0",
     "semantic-ui": "^2.2.7"
   },
