@@ -1,5 +1,3 @@
 # Dependency directory
 node_modules
-# semantic thing again
-semantic
-semantic.json
+assets/js/node_modules
