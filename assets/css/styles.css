@@ -48,7 +48,7 @@ color: #B72000
 }
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('http://hask.me/backgroundvid.mp4') center center / cover no-repeat;
+    background: url('http://hask.me/assets/css/imgs/backgroundvid.mp4') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {

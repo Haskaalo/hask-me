@@ -1,65 +1,44 @@
+<!DOCTYPE HTML>
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/semantic/dist/semantic.min.css">
-<script src="assets/css/semantic/dist/semantic.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-  <meta charset="UTF-8">
-  <meta name="description" content="hask.me is a website to get all overall information about a specified Overwatch player">
-  <meta name="keywords" content="Overwatch,Stats">
-  <meta name="author" content="Haskaalo">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hask.me</title>
-<style>
-
-    </style>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Welcome to me!</title>
 </head>
 <body>
-
-<div class="fullscreen-bg">
-    <video loop muted autoplay poster="assets/imgs/backgroundvid.mp4" class="fullscreen-bg__video">
-        <source src="assets/imgs/backgroundvid.mp4" type="video/mp4">
-    </video>
-</div>
-<div class="ui middle aligned center aligned grid">
-  <div class="column">
-    <h2 class="ui teal image header">
-      <div class="content">
-        <h1>hask.me</h1>
-      </div>
-      </div>
-      </div>
-<div class="ui raised very padded text container segment">
-  <h2 class="ui header">Find:</h2>
-<div class="ui right action left icon input">
-  <i class="search icon"></i>
-  <input type="text" id="search" placeholder="Battle#Tag">
-<button class="ui button" id="nombutton" onclick="search()">
-  Search
-</button>
-</div>
-<p id="loading"></p>
-<p id="not_found"></p>
-<p id="battletag"></p>
-<p id="level"></p>
-<p id ="comprank"></p>
-<p id ="totalgame"></p>
-<p id ="gamewon"></p>
-<p id ="gamelost"></p>
-<p id ="winrate"></p>
-<div id="issue";>
-<small>hask.me is a website to get all overall information about a specified Overwatch player</small>
-<br>
-<a href="https://github.com/Haskaalo/hask-me">Having an issue?</a>
-</div>
-</div>
-    	<script src="assets/js/bundle.js"></script>
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90317214-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <h1 id="title">hask.me</h1>
+    <br>
+    <section>
+          <h1 id="info">&nbsp; My profiles</h1>
+          <br>
+          <div id="one">
+          <div id="icon">
+          <a href="https://github.com/Haskaalo"><i class="github icon"></i><h4 style="font-family: 'Cabin', serif;">Haskaalo</h4></a></div>
+          </div>
+          
+          <div id="two">
+          <div id="icon"> <a href="https://www.reddit.com/user/NAFinalHour/"><i class="reddit icon"></i><h4 style="font-family: 'Cabin', serif;">NAFinalHour</h4></a></div>
+          </div>
+    </section>
+    <br>
+    <h1 id="info">&nbsp; My projects</h1>
+        <section>
+          <br>
+          <div id="one">
+          <div id="icon">
+          <a href="https://hask.me/OWSTATSLooker.html"><i class="unhide icon"></i><h4 style="font-family: 'Cabin', serif;">OWSTATSLooker</h4></a></div>
+          </div>
+          
+          <!--<div id="two">              // IF I HAVE ANOTHER PROJECT TOO LAZY TO ERASE THIS :D
+          <div id="icon"> <a href="THE_URL_HERE"><i class="reddit icon"></i><h4 style="font-family: 'Cabin', serif;">NAFinalHour</h4></a></div>
+          </div> -->
+    </section>
+<style>
+a {
+    color: gray;
+}
+</style>
 </body>

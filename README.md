@@ -5,7 +5,7 @@ Hello! Our website is running [here](https://hask.me/)
 
 ## What am I using?
 I'm currently using [semantic-ui](http://semantic-ui.com/) for CSS, [request](https://github.com/request/request) to get Stats, [jQuery](http://jquery.com/) and of course... [NodeJS](https://nodejs.org/en/)
-
+Background from: [this website](https://pixabay.com/fr/gummib%C3%A4rchen-les-ours-gummi-318362/)
 ## To do list
 
 1. Make design better
