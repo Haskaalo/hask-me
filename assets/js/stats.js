@@ -1,5 +1,4 @@
  var request = require('request');
- var $ = require('jQuery');
 function search() {
     document.getElementById("not_found").innerHTML = ""
   document.getElementById("loading").innerHTML = "Searching..."

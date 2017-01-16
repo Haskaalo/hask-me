@@ -1,14 +1,11 @@
 # Hask.me
 
 ## Visit us!
-Hello! Our website is running [here](https://hask.me/)
+Hello! My personal website is running [here](https://hask.me/)
 
 ## What am I using?
-I'm currently using [semantic-ui](http://semantic-ui.com/) for CSS, [request](https://github.com/request/request) to get Stats, [jQuery](http://jquery.com/) and of course... [NodeJS](https://nodejs.org/en/)
-Background from: [this website](https://pixabay.com/fr/gummib%C3%A4rchen-les-ours-gummi-318362/)
-## To do list
+UI is [Semantic-UI](http://semantic-ui.com/)
 
-1. Make design better
-2. Make stats.js a little bit better (currently using document.GetElementById)
-3. Making OWAPI run on our own server
-4. Match History?
+The API used on OWSTATSLooker is [OWAPI](https://github.com/SunDwarf/OWAPI) and [request](https://github.com/request/request) to... request
+
+The background on 404 and index is from [Subtle Patterns](https://subtlepatterns.com/)
