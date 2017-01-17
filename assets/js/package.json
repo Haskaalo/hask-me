@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Haskaalo/hask-me.git"
+    "url": "git+https://github.com/Haskaalo/hask.me.git"
   },
   "author": "Haskaalo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Haskaalo/hask-me/issues"
+    "url": "https://github.com/Haskaalo/hask.me/issues"
   },
-  "homepage": "https://github.com/Haskaalo/hask-me#readme"
+  "homepage": "https://github.com/Haskaalo/hask.me#readme"
 }
