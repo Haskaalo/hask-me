@@ -1,5 +1,5 @@
 body {
-		background: #060f1e url(imgs/gummy.jpg) center center no-repeat;
+		background: #060f1e url(https://hask.me/assets/css/imgs/gummy.jpg) center center no-repeat;
 		background-size: cover;
   background-color: #060f1e;
 }
@@ -10,11 +10,8 @@ body {
     text-align: left;
 }
 #icon {
-    align-content: left;
     font-size: 350%;
     color: gray;
-    align-content: left;
-    width:100px;
 }
 #info {
     text-align: left;
@@ -25,9 +22,8 @@ a {
     font-family: 'Cabin', serif;
 }
 div#one {
-
     float: left;
 }
-div#two {
-margin-left: 5%;
+a:hover {
+    color: white;
 }
