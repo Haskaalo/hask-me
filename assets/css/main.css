@@ -2,12 +2,12 @@ body {
 		background: #060f1e url(imgs/gummy.jpg) center center no-repeat;
 		background-size: cover;
   background-color: #060f1e;
-  align-content: left;
 }
 #title {
     text-align: left;
     font-size: 900%;
     color: #ffffff;
+    text-align: left;
 }
 #icon {
     align-content: left;
@@ -24,14 +24,10 @@ a {
     color: gray;
     font-family: 'Cabin', serif;
 }
-section {
-    margin: auto;
-}
 div#one {
 
     float: left;
 }
 div#two {
 margin-left: 5%;
-    height: 100px;
 }
