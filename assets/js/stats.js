@@ -5,18 +5,19 @@ function search() {
 var battletag = document.getElementById("search").value;
 $( "#nombutton" ).replaceWith( "<button class='ui loading button' id='nombutton'>Search</button>" );
  var replace = battletag.replace('#', '-')
-request('https://owapi.net/api/v2/u/' + replace + '/stats/competitive', function(error, response, body) { // Sorry OWAPI :3, ill do my own server one day :3
+request('https://owapi.net/api/v3/u/' + replace + '/stats', function(error, response, body) { // Sorry OWAPI :3, ill do my own server one day :3
     if (!error && response.statusCode == 200) {
+        
         $( "#nombutton" ).replaceWith( "<button class='ui button' id='nombutton' onclick='search()'>Search</button>" );
-var data = JSON.parse(body);
+        var data = JSON.parse(body)
         var user = "Looked for: " + battletag
-        var levelreall = data.overall_stats.prestige * 100 + data.overall_stats.level
+        var levelreall = data.us.stats.competitive.overall_stats.prestige * 100 + data.us.stats.competitive.overall_stats.level
 		var userlevel = "Level: " + levelreall
-        var comprank = "Current Season Rank: " + data.overall_stats.comprank + " SR"
-        var total_game = "Total of game(s) played: " + data.overall_stats.games
-        var games_won = "Game(s) won: " + data.overall_stats.wins
-        var games_lost = "Game(s) lost: " + data.overall_stats.losses
-        var winrate = "Winrate: " + data.overall_stats.win_rate + "%"
+        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR"
+        var total_game = "Total of game(s) played: " + data.us.stats.competitive.overall_stats.games
+        var games_won = "Game(s) won: " + data.us.stats.competitive.overall_stats.wins
+        var games_lost = "Game(s) lost: " + data.us.stats.competitive.overall_stats.losses
+        var winrate = "Winrate: " + data.us.stats.competitive.overall_stats.win_rate + "%"
         document.getElementById("loading").innerHTML = ""
         document.getElementById("not_found").innerHTML = "";
 		document.getElementById("battletag").innerHTML = user;
