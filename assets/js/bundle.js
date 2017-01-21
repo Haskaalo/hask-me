@@ -62744,7 +62744,7 @@ request('https://owapi.net/api/v3/u/' + replace + '/stats', function(error, resp
         var user = "Looked for: " + battletag
         var levelreall = data.us.stats.competitive.overall_stats.prestige * 100 + data.us.stats.competitive.overall_stats.level
 		var userlevel = "Level: " + levelreall
-        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR"
+        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR (" + data.us.competitive.overall_stats.tier + ")"
         var total_game = "Total of game(s) played: " + data.us.stats.competitive.overall_stats.games
         var games_won = "Game(s) won: " + data.us.stats.competitive.overall_stats.wins
         var games_lost = "Game(s) lost: " + data.us.stats.competitive.overall_stats.losses
