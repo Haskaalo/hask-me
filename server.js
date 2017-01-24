@@ -32,6 +32,6 @@ app.get('/OWSTATSLooker.html', function (req, res) {
   });
 
 
-app.listen(1337, function () {
-  console.log('The website is listening on port 1337')
+app.listen(3000, function () {
+  console.log('The website is listening on port 3000')
 })
