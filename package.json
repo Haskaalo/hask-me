@@ -1,0 +1,23 @@
+{
+  "name": "hask.me",
+  "version": "1.0.0",
+  "description": "Hello! My personal website is running [here](https://hask.me/)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haskaalo/hask.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haskaalo/hask.me/issues"
+  },
+  "homepage": "https://github.com/Haskaalo/hask.me#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}

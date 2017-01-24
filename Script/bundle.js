@@ -31833,8 +31833,8 @@ function _setExports(ndebug) {
 
 module.exports = _setExports(process.env.NODE_NDEBUG);
 
-}).call(this,{"isBuffer":require("../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
-},{"../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"_process":121,"assert":16,"stream":153,"util":165}],175:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"_process":121,"assert":16,"stream":153,"util":165}],175:[function(require,module,exports){
 
 /*!
  *  Copyright 2010 LearnBoost <dev@learnboost.com>
@@ -33293,8 +33293,8 @@ CombinedStream.prototype._emitError = function(err) {
   this.emit('error', err);
 };
 
-}).call(this,{"isBuffer":require("../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"delayed-stream":181,"stream":153,"util":165}],181:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"delayed-stream":181,"stream":153,"util":165}],181:[function(require,module,exports){
 var Stream = require('stream').Stream;
 var util = require('util');
 
@@ -36687,8 +36687,8 @@ module.exports = {
 
 };
 
-}).call(this,{"isBuffer":require("../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./utils":214,"assert-plus":174,"crypto":58,"http":154,"jsprim":231,"sshpk":272,"util":165}],214:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./utils":214,"assert-plus":174,"crypto":58,"http":154,"jsprim":231,"sshpk":272,"util":165}],214:[function(require,module,exports){
 // Copyright 2012 Joyent, Inc.  All rights reserved.
 
 var assert = require('assert-plus');
@@ -39018,8 +39018,8 @@ var crypto = require('crypto');
 
 module.exports = ns;
 
-}).call(this,{"isBuffer":require("../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./core":222,"./curve255":223,"./utils":226,"crypto":58,"jsbn":227}],226:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./core":222,"./curve255":223,"./utils":226,"crypto":58,"jsbn":227}],226:[function(require,module,exports){
 "use strict";
 /**
  * @fileOverview
@@ -56531,8 +56531,8 @@ Key._oldVersionDetect = function (obj) {
 	return ([1, 0]);
 };
 
-}).call(this,{"isBuffer":require("../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./algs":255,"./dhe":257,"./ed-compat":258,"./errors":259,"./fingerprint":260,"./formats/auto":261,"./formats/pem":263,"./formats/pkcs1":264,"./formats/pkcs8":265,"./formats/rfc4253":266,"./formats/ssh":268,"./formats/ssh-private":267,"./private-key":274,"./signature":275,"./utils":277,"assert-plus":278,"crypto":58}],274:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"./algs":255,"./dhe":257,"./ed-compat":258,"./errors":259,"./fingerprint":260,"./formats/auto":261,"./formats/pem":263,"./formats/pkcs1":264,"./formats/pkcs8":265,"./formats/rfc4253":266,"./formats/ssh":268,"./formats/ssh-private":267,"./private-key":274,"./signature":275,"./utils":277,"assert-plus":278,"crypto":58}],274:[function(require,module,exports){
 (function (Buffer){
 // Copyright 2015 Joyent, Inc.
 
@@ -57674,8 +57674,8 @@ function _setExports(ndebug) {
 
 module.exports = _setExports(process.env.NODE_NDEBUG);
 
-}).call(this,{"isBuffer":require("../../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
-},{"../../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"_process":121,"assert":16,"stream":153,"util":165}],279:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../../../AppData/Roaming/npm/node_modules/browserify/node_modules/is-buffer/index.js":98,"_process":121,"assert":16,"stream":153,"util":165}],279:[function(require,module,exports){
 (function (Buffer){
 var util = require('util')
 var Stream = require('stream')
@@ -62744,7 +62744,7 @@ request('https://owapi.net/api/v3/u/' + replace + '/stats', function(error, resp
         var user = "Looked for: " + battletag
         var levelreall = data.us.stats.competitive.overall_stats.prestige * 100 + data.us.stats.competitive.overall_stats.level
 		var userlevel = "Level: " + levelreall
-        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR (" + data.us.stats.competitive.overall_stats.tier + ")"
+        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR, Tier " + data.us.stats.competitive.overall_stats.tier
         var total_game = "Total of game(s) played: " + data.us.stats.competitive.overall_stats.games
         var games_won = "Game(s) won: " + data.us.stats.competitive.overall_stats.wins
         var games_lost = "Game(s) lost: " + data.us.stats.competitive.overall_stats.losses
