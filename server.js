@@ -1,9 +1,9 @@
 var express = require('express')
 var app = express()
 
-app.use(express.static(__dirname + '/View'));
+app.use(express.static(__dirname + '/view'));
 //Store all HTML files in view folder.
-app.use(express.static(__dirname + '/Script'));
+app.use(express.static(__dirname + '/script'));
 //Store all JS and CSS in Scripts folder.
 app.use(express.static(__dirname + '/img'));
 //Store all imgs and Video on imgs Folder
