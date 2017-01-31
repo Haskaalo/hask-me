@@ -7,13 +7,13 @@ $( "#nombutton" ).replaceWith( "<button class='ui loading button' id='nombutton'
  var replace = battletag.replace('#', '-')
 request('https://owapi.net/api/v3/u/' + replace + '/stats', function(error, response, body) { // Sorry OWAPI :3, ill do my own server one day :3
     if (!error && response.statusCode == 200) {
-        
+
         $( "#nombutton" ).replaceWith( "<button class='ui button' id='nombutton' onclick='search()'>Search</button>" );
         var data = JSON.parse(body)
         var user = "Looked for: " + battletag
         var levelreall = data.us.stats.competitive.overall_stats.prestige * 100 + data.us.stats.competitive.overall_stats.level
 		var userlevel = "Level: " + levelreall
-        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR, Tier " + data.us.stats.competitive.overall_stats.tier
+        var comprank = "Current Season Rank: " + data.us.stats.competitive.overall_stats.comprank + " SR " + "["+ data.us.stats.competitive.overall_stats.tier + "] "
         var total_game = "Total of game(s) played: " + data.us.stats.competitive.overall_stats.games
         var games_won = "Game(s) won: " + data.us.stats.competitive.overall_stats.wins
         var games_lost = "Game(s) lost: " + data.us.stats.competitive.overall_stats.losses

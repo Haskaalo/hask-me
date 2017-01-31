@@ -1,7 +1,7 @@
 body {
-		background: #060f1e url(./gummy.jpg) center center no-repeat;
-		background-size: cover;
-  background-color: #060f1e;
+	  background: #060f1e url(./gummy.jpg) center center no-repeat;
+    background-size: cover;
+    background-color: #060f1e;
 }
 #title {
     text-align: left;
