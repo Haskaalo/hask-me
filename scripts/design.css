@@ -1,0 +1,14 @@
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+#welcometome {
+    font-size: 50px;
+    color: #ffffff;
+}
+.welcometext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
