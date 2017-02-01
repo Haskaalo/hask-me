@@ -3,8 +3,8 @@ var app = express()
 var path = require('path');
 var http = require('http');
 var server = http.createServer(app);
-
-
+var compression = require('compression')
+app.use(compression())
 // Store all .html in views folder + static
 app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
 
