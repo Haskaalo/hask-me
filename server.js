@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
 app.use(express.static(__dirname + '/scripts'));
 //Store all JS and CSS in Scripts folder.
 app.use(express.static(__dirname + '/imgs'));
+
 //Store all imgs and Video on imgs Folder
 app.set('view engine', 'html');
 
