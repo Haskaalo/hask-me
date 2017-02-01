@@ -22,9 +22,6 @@ app.get('/', function (req, res) {
 app.get('/OWSTATSLooker', function (req, res) {
   res.render('./OWSTATSLooker.html');
 })
-app.get('/sitemap.xml', function (req, res) {
-  res.render('./indexstuff/sitemap.xml');
-})
 
   // Handle 404
   app.use(function(req, res) {
