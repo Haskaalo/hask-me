@@ -18,7 +18,10 @@
   "homepage": "https://github.com/Haskaalo/hask.me#readme",
   "dependencies": {
     "compression": "^1.6.2",
+    "create-html": "^1.1.0",
     "express": "^4.14.0",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
     "request": "^2.79.0"
   }
 }

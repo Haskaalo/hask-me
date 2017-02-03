@@ -1,9 +1,16 @@
-var express = require('express')
+var express = require('express');
 var app = express()
 var path = require('path');
 var http = require('http');
 var server = http.createServer(app);
-var compression = require('compression')
+var compression = require('compression');
+var fs = require('fs'); // fs for create-html
+var createHTML = require('create-html');
+var randomstring = require('randomstring');
+var randomnum = randomstring.generate({
+  length: 7,
+  charset: 'alphanumeric'
+});
 app.use(compression())
 // Store all .html in views folder + static
 app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
@@ -11,6 +18,8 @@ app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
 app.use(express.static(__dirname + '/scripts'));
 //Store all JS and CSS in Scripts folder.
 app.use(express.static(__dirname + '/imgs'));
+// link Store
+app.use(express.static(path.join(__dirname, 'linkshort'),{extensions:['html']}));
 
 //Store all imgs and Video on imgs Folder
 app.set('view engine', 'html');
@@ -22,6 +31,36 @@ app.get('/', function (req, res) {
 app.get('/OWSTATSLooker', function (req, res) {
   res.render('./OWSTATSLooker.html');
 })
+// LINK SHORT start
+function makenew() {
+  return randomnum = randomstring.generate({
+  length: 7,
+  charset: 'alphanumeric'
+});
+}
+app.get('/linkshortapi?:id', function (req, res, next) {
+
+  // if the user ID is 0, skip to the next route req.params.id
+  // ======================================================
+// THIS IS CREATE HTML PART
+// ======================================================
+var html = createHTML({
+  title: 'Redirecting...',
+  head: '<meta http-equiv="refresh" content="0; url='+ req.query.id +'" />',
+  body: '<h1><a href="'+ req.query.id +'">Redirect</a></h1>' // change this soon
+})
+
+      fs.writeFile('linkshort/' + randomnum + '.html', html, function (err) {
+        console.log('now creating a new page ' + randomnum);
+  if (err) console.log(err)
+})
+// ======================================================
+// END
+// ======================================================
+res.redirect('/' + randomnum);
+makenew();
+})
+// LINK SHORT END
 
   // Handle 404
   app.use(function(req, res) {
