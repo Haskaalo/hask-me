@@ -1,4 +1,4 @@
 # Dependency directory
 node_modules
 script/node_modules
-npm-debug.txt
+npm-debug.log
