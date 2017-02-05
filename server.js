@@ -75,7 +75,7 @@ makenew();
   });
 
 
-  server.listen(3000, 'localhost');
+  server.listen(3000);
   server.on('listening', function() {
       console.log('Express server started on port %s at %s', server.address().port, server.address().address);
   });
