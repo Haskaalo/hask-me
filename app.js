@@ -11,6 +11,11 @@ var randomnum = randomstring.generate({
   length: 7,
   charset: 'alphanumeric'
 });
+
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 app.use(compression())
 // Store all .html in views folder + static
 app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
@@ -75,4 +80,6 @@ makenew();
   });
 
 
-module.exports = app;
+  app.listen(port, function() {
+      console.log('Our app is running on http://localhost:' + port);
+  });
