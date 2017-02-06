@@ -79,9 +79,7 @@ makenew();
      console.log('500: SOMETHINGS NOT RIGHT!');
   });
 
-  setInterval(function() {
-      http.get("https://m2xnjx98fn.herokuapp.com");
-  }, 300000); // every 5 minutes (300000)
+
 
   app.listen(port, function() {
       console.log('Our app is running on http://localhost:' + port);
