@@ -62,7 +62,7 @@ var html = createHTML({
 // ======================================================
 // END
 // ======================================================
-res.redirect('/' + randomnum);
+res.send('hask.me/' + randomnum);
 makenew();
 })
 // LINK SHORT END
