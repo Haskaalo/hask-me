@@ -70,7 +70,7 @@ makenew();
 
   // Handle 404
   app.use(function(req, res) {
-    res.send(404, '<meta http-equiv="refresh" content="0; url=./" /> <p><a href="./">404: Not found. Return home?</a></p>');
+    res.send(404, '404: Page Not Found');
      console.log('just got 404!');
   });
 
