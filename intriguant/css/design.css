@@ -1,0 +1,153 @@
+body {
+	background-color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+#load {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    color: white;
+}
+#ever {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* first bg vid stuff */
+video#firstbgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/space.jpg) no-repeat;
+    background-size: cover; 
+}
+/* ------------------ */
+video { 
+	display: block;
+ }
+ #howsecond {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+    color: black;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+  #bigthird {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+ /* THIRD IMAGE THING */
+ video#fourthbgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/outofspace.jpg) no-repeat;
+    background-size: cover; 
+}
+/* -------------------------- */
+  #fourthweb {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+  #imean {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+video#forgotbgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/space.jpg) no-repeat;
+    background-size: cover; 
+}
+  #yea {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 200px;
+    color: black;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #justlikehow {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    font-style: bold;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }

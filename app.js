@@ -12,9 +12,6 @@ var randomnum = randomstring.generate({
   charset: 'alphanumeric'
 });
 
-// set the port of our application
-// process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
 
 app.use(compression())
 // Store all .html in views folder + static
@@ -28,14 +25,18 @@ app.use(express.static(path.join(__dirname, 'linkshort'),{extensions:['html']}))
 
 //Store all imgs and Video on imgs Folder
 app.set('view engine', 'html');
+app.use(express.static(__dirname + '/intriguant'));
+
+app.use(express.static(path.join(__dirname, './intriguant/views'),{extensions:['html']}));
+
+app.get('/intriguant', function (req, res) {
+  res.render('./intriguant.html')
+})
 
 app.get('/', function (req, res) {
   res.render('./index.html');
 })
 
-app.get('/OWSTATSLooker', function (req, res) {
-  res.render('./OWSTATSLooker.html');
-})
 // LINK SHORT start
 function makenew() {
   return randomnum = randomstring.generate({
