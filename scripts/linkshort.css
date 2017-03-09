@@ -1,5 +1,4 @@
 body {
-    /*display:table;*/
     background-color: #1B1C1D;
     color: white;
     padding-top: 70px;
@@ -22,13 +21,9 @@ body {
 	color: white;
 }
 #inputs {
-	width: 40%;
-
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: 10px;
+    margin: 0 auto;
+    float: none;
+    width: 40%;
 }
 #startby {
 	text-align: center;
@@ -43,8 +38,7 @@ body {
 	position: absolute;
 }
 #click {
-	position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
 }

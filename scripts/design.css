@@ -1,7 +1,7 @@
 body {
     background-color: #1B1C1D;
     color: white;
-    padding-top: 50px;
+    padding-top: 70px;
     background-color: #1B1C1D;
     background: linear-gradient(
       rgba(0, 0, 0, 0.7), 
@@ -9,29 +9,23 @@ body {
     ), url('./cliff.jpg');
 }
 #jumbot {
-    left: 50%;
-    top: 120px;
-    height: 500px;
-    transform: translateX(-50%) translateY(-50%);
-    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     background-color:transparent !important;
 }
 #slogan {
     font-family: 'Lato', sans-serif;
     color: white;
-    margin-top: 2em;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    left: 50%;
+    text-align: center;
 }
 #info {
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     color: white;
-    margin-top: 10em;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    left: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #profile {
     text-align: center;
