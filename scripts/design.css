@@ -1,29 +1,57 @@
 body {
-    background: #000000;
-    font-family: 'Roboto', sans-serif;
-    padding: 0em;
+    background-color: #1B1C1D;
+    color: white;
+    padding-top: 50px;
+    background-color: #1B1C1D;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url('./cliff.jpg');
 }
-#welcometome {
-    font-size: 50px;
-    color: #ffffff;
-}
-.welcometext {
-    position: absolute;
-    top: 50%;
+#jumbot {
     left: 50%;
+    top: 120px;
+    height: 500px;
     transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    background-color:transparent !important;
 }
-body.pushable>.pusher {
-  	background: #000000 url(./cliff.jpg) center center no-repeat;
-    background-size: cover;
-    background-color: #000000;
+#slogan {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin-top: 2em;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
 }
-h4 {
+#info {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin-top: 10em;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+}
+#profile {
+    text-align: center;
+}
+#project {
+    text-align: center;
+}
+#profilelist {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.icons {
+    color: white;
     font-size: 20px;
+    text-align: center;
 }
-#madebyme {
-    color: gray;
-    text-align: bottom-center;
-   position: absolute;
-   bottom: 0;
+a:hover {
+    text-decoration: none;
+}
+#seperator {
+    width: 15px;
 }

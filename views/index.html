@@ -1,12 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <head>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./design.css">
-    <meta property="og:description" content="This is my little Portfolio where I show some of my project.">
+    <meta property="og:description" content="This is my little Portfolio where I show some of my project. — I'm a Young developer developing in his free time Apps, Websites and Games.">
     <meta property="og:title" content="Haskaalo — Portfolio">
     <meta property="og:type" content="website">
     <meta property="keywords" content="portfolio, personal website, haskaalo, developer">
@@ -15,62 +14,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="https://hask.me/">
     <meta name="author" content="Haskaalo">
-    <meta name="description" content="This is my little Portfolio where I show some of my project.">
+    <meta name="description" content="This is my little Portfolio where I show some of my project. — I'm a Young developer developing in his free time Apps, Websites and Games.">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <meta name="google-site-verification" content="zxWi-YlLosedsyb5JIsu4A3_OjTe56nHPAogKG2F9zM" />
     <title>Haskaalo — Portfolio</title>
 </head>
 <body>
-    <div class="welcometext" hidden>
-    <p id=welcometome>Welcome to me!</p>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand">haskaalo portfolio</a>
+  </div>
+</nav>
+<!--col-sm-6 col-md-3 -->
+<div class="jumbotron" id="jumbot">
+<h1 id="slogan">Haskaalo</h1>
+<h1 id=info>Young developer developing in his free time Apps, Websites and Games.</h1>
+</div>
+<div class="container-fluid" id="content">
+<h1 id=project>Projects</h1>
+<br>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>hask.me link shortener</h3>
+        <p>This is a pretty light link shortener made on Express. I might realease the source code on Github soon.</p>
+        <p>301 Redirect. No Tracking/Analytics. Just like those old link shortener. But faster. :)</p>
+        <br>
+        <a href="./linkshort" class="btn btn-default">Go to the link shortener!</a>
+      </div>
     </div>
+  </div>
 
-    <div class="everything" hidden> <!-- EVERYTHING START HERE -->
-  <div class="ui sidebar inverted vertical menu">
-    <h4 class="item">
-        My Projects
-    </h4>
-    <a class="item" href="./intriguant">
-      Intriguant (A weird thing I did when I was bored)
-    </a>
-    <a class="item" href="https://overank.me/">
-    Overank.me (Isn't finished yet)
-    </a>
-    <a class="item" href="./linkshort">
-    hask.me Link Shortener
-    </a>
-    <h4 class="item">
-        My Profiles
-    </h4>
-    <a class="item" href="https://github.com/Haskaalo/">
-      Github
-      <i class="github icon"></i>
-    </a>
-    <a class="item" href="https://www.reddit.com/user/NAFinalHour/">
-      Reddit
-      <i class="reddit icon"></i>
-    </a>
-    <p id=madebyme>Designed by <a href="https://github.com/Haskaalo/">me</a> with <i class="heart icon"></i></p>
-  </div>
-  <div class="pusher">
-  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>Intriguant</h3>
+        <p>Okay. This is a weird project. What can I say? Oh. Yeah! It was made on a boring friday night.</p>
+        <br>
+        <a href="./intriguant" class="btn btn-default">All aboard Intriguant!</a>
+      </div>
     </div>
-    <script>
- $('.ui.sidebar').sidebar({
- dimPage: false,
- transition: 'push',
- exclusive: false,
- closable: false
- });
-</script>
-      		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-90317214-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<script src="./design.js"></script>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>???</h3>
+        <p>This is going to be 🔥 🔥 🔥 I'm gonna share more info soon.</p>
+        <br>
+        <a href="#" class="btn btn-default">???</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<h1 id=profile>Profiles</h1>
+<br>
+<div class=:container-fluid id=profilelist>
+<a href="https://github.com/haskaalo" class=icons><img border="0" alt="Github Profile" src="./GitHub-Mark-Light-64px.png"><br>Github&nbsp;</a>
+<div id=seperator></div>
+<a href="https://reddit.com/u/NAFinalHour" class=icons><img border="0" alt="Reddit Profile" src="./reddit-social-logo-character.png"><br>Reddit&nbsp;</a>
+</div>
 </body>
 </html>
