@@ -20,3 +20,10 @@ function everything () {
   .sidebar('toggle')
 ;
 }
+
+ $('.ui.sidebar').sidebar({
+ dimPage: false,
+ transition: 'push',
+ exclusive: false,
+ closable: false
+ });

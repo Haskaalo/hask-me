@@ -1,6 +1,7 @@
 body {
     background: #000000;
     font-family: 'Roboto', sans-serif;
+    padding: 0em;
 }
 #welcometome {
     font-size: 50px;
@@ -11,4 +12,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+body.pushable>.pusher {
+  	background: #000000 url(./cliff.jpg) center center no-repeat;
+    background-size: cover;
+    background-color: #000000;
+}
+h4 {
+    font-size: 20px;
+}
+#madebyme {
+    color: gray;
+    text-align: bottom-center;
+   position: absolute;
+   bottom: 0;
 }

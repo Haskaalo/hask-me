@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<title>hask.me link shortener</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="./linkshort.css" rel="stylesheet">
+
+    <meta property="og:description" content="A simple link shortener with 301 redirect and no tracker. it's just a link shortener like it used to be.">
+    <meta property="og:title" content="hask.me link shortener">
+    <meta property="og:type" content="website">
+    <meta property="keywords" content="portfolio, personal website, haskaalo, developer">
+    <meta property="og:author" content="Haskaalo">
+    <meta property="og:image" content="https://hask.me/thinking.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://hask.me/linkshort">
+    <meta name="author" content="Haskaalo">
+    <meta name="description" content="A simple link shortener with 301 redirect. and no tracker. it's just a link shortener like it used to be.">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#" id="brand">hask.me link shortener</a>
+    <p class="navbar-text navbar-right"><a href="https://hask.me" class="navbar-link">Return Home</a></p>
+  </div>
+</nav>
+<div class="container-fluid" id="box">
+<p id=slogan>Just like how it used to be.</p>
+<p id=startby>Start by entering your link below.</p>
+<div class="form-group" id="inputs">
+  <div class="input-group">
+    <input type="text" class="form-control" id="inputc" placeholder="https://example.com">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" id="shorten">Shorten it!</button>
+    </span>
+  </div>
+  <ul id="messages"></ul>
+</div>
+<a id=click><img src="./arrow.png" alt="Go down"></a>
+</div>
+<div class="container-fluid" id="container2"><h1 id="info">301 Redirect. No Tracker. Just a link shortener</h1></div>
+<script src="./linkshort.js"></script>
+</body>
+</html>

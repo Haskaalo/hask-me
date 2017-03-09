@@ -4,14 +4,18 @@ var path = require('path');
 var http = require('http');
 var server = http.createServer(app);
 var compression = require('compression');
-var fs = require('fs'); // fs for create-html
-var createHTML = require('create-html');
+const fs = require('fs');
 var randomstring = require('randomstring');
+var dustDB = require('dustdb');
 var randomnum = randomstring.generate({
   length: 7,
   charset: 'alphanumeric'
 });
 
+if (!fs.existsSync('./tmp')){
+  fs.mkdirSync('./tmp');
+  fs.mkdirSync('./tmp/linkshort');
+}
 
 app.use(compression())
 // Store all .html in views folder + static
@@ -21,7 +25,7 @@ app.use(express.static(__dirname + '/scripts'));
 //Store all JS and CSS in Scripts folder.
 app.use(express.static(__dirname + '/imgs'));
 // link Store
-app.use(express.static(path.join(__dirname, 'linkshort'),{extensions:['html']}));
+app.use(express.static(path.join(__dirname, '/tmp/linkshort'),{extensions:['html']}));
 
 //Store all imgs and Video on imgs Folder
 app.set('view engine', 'html');
@@ -46,37 +50,34 @@ function makenew() {
 }
 app.get('/linkshortapi?:id', function (req, res, next) {
 
-  // if the user ID is 0, skip to the next route req.params.id
-  // ======================================================
-// THIS IS CREATE HTML PART
-// ======================================================
-var html = createHTML({
-  title: 'Redirecting...',
-  head: '<meta http-equiv="refresh" content="0; url='+ req.query.id +'" />',
-  body: '<h1><a href="'+ req.query.id +'">Redirect</a></h1>' // change this soon
+var decode = decodeURI(req.query.id);
+dustDB.createfile('./tmp/linkshort/', randomnum, decode);
+
+
+res.send('hask.me/l/' + randomnum);
+makenew();
 })
 
-      fs.writeFile('linkshort/' + randomnum + '.html', html, function (err) {
-        console.log('now creating a new page ' + randomnum);
-  if (err) console.log(err)
-})
-// ======================================================
-// END
-// ======================================================
-res.send('hask.me/' + randomnum);
-makenew();
+app.get('/l/:link', function (req, res, next) {
+  fs.readFile('./tmp/linkshort/' + req.params.link, (err, data) => {
+    if (err) {
+      res.status(404).send('404: Page Not Found')
+    }
+    else {
+      res.redirect(301, data);
+    }
+  });
 })
 // LINK SHORT END
 
   // Handle 404
   app.use(function(req, res) {
-    res.send(404, '404: Page Not Found');
-     console.log('just got 404!');
+    res.status(404).send('404: Page Not Found')
   });
 
   // Handle 500
   app.use(function(error, req, res, next) {
-     res.send('<h1>500: Internal Server Error</h1>', 500);
+    res.status(500).send('500: Internal Server Error')
      console.log('500: SOMETHINGS NOT RIGHT!');
   });
 
