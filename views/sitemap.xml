@@ -12,13 +12,8 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://hask.me/linkshort</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.50</priority>
-</url>
-<url>
   <loc>https://hask.me/intriguant</loc>
   <changefreq>daily</changefreq>
-  <priority>1.00</priority>
+  <priority>0.50</priority>
 </url>
 </urlset>
