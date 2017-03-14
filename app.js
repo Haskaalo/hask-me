@@ -49,13 +49,17 @@ function makenew() {
 });
 }
 app.get('/linkshortapi?:id', function (req, res, next) {
-
 var decode = decodeURI(req.query.id);
+fs.readFile('./keys/' + req.headers['x-access-key'], (err) => {
+if (err) {
+  res.status(403).send('403: Not Authorized')
+}
+else {
 dustDB.createfile('./tmp/linkshort/', randomnum, decode);
-
-
 res.send('hask.me/l/' + randomnum);
 makenew();
+}
+});
 })
 
 app.get('/l/:link', function (req, res, next) {
