@@ -49,3 +49,9 @@ a:hover {
 #seperator {
     width: 15px;
 }
+#buttonseemore {
+    float: right;
+}
+.btn:focus {
+    outline: 0;
+}
