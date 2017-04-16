@@ -3,6 +3,7 @@ body {
     color: white;
     padding-top: 70px;
     background-color: #1B1C1D;
+    background-repeat: no-repeat;
     background: linear-gradient(
       rgba(0, 0, 0, 0.7), 
       rgba(0, 0, 0, 0.7)
@@ -38,16 +39,12 @@ body {
     justify-content:center;
     align-items:center;
 }
-.icons {
+.fa {
     color: white;
     font-size: 20px;
-    text-align: center;
 }
 a:hover {
     text-decoration: none;
-}
-#seperator {
-    width: 15px;
 }
 #buttonseemore {
     float: right;
