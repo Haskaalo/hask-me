@@ -6,7 +6,7 @@ var server = http.createServer(app);
 var compression = require('compression');
 const fs = require('fs');
 
-app.use(compression())
+
 // Store all .html in views folder + static
 app.use(express.static(path.join(__dirname, 'views'),{extensions:['html']}));
 
@@ -19,6 +19,9 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/intriguant'));
 
 app.use(express.static(path.join(__dirname, './intriguant/views'),{extensions:['html']}));
+
+// middlewares
+app.use(compression())
 
 // LINK SHORT END
 
