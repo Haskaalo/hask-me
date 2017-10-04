@@ -1,20 +1,30 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 30vh;
-  }
-  .info {
-    float: right;
-  }
-  .icon {
-    width: 50px;
-    heigth: 50px;
-  }
-  .sombra {
-    heigth: 200px;
-    width: 200px;
-    border: 6px solid white;
-    margin: auto;
-    display: block;
-  }
+  background-color: black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 30vh;
+}
+.info {
+  float: right;
+}
+.icon {
+  width: 50px;
+  heigth: 50px;
+}
+.sombra {
+  heigth: 200px;
+  width: 200px;
+  border: 6px solid white;
+  margin: auto;
+  display: block;
+}
+.dtext {
+  float: left;
+}
+.little-rectangle {
+  background-color: white;
+  width: 15px;
+  heigth: 24px;
+  margin-bottom: 1em;
+  float: right;
+}

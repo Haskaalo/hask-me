@@ -32,7 +32,11 @@
     <div class="col-md-7 info">
       <h1>$ whoami</h1>
       <br/>
-      <p>Haskaalo</p>
+      <div style="display: inline-block;">
+        <p class="dtext">Haskaalo</p>
+        <div class="little-rectangle">l</div>
+      </div>
+      <br/>
       <a href="https://github.com/haskaalo">
         <img src="imgs/contacts.png" class="icon" />
       </a>
@@ -44,6 +48,18 @@
   </div>
 </div>
   
-  
+  <script>
+    var interv = true;
+
+setInterval(function() {
+  if (interv === true) {
+    document.getElementsByClassName("little-rectangle")[0].textContent = " l"
+    interv = false
+  } else {
+    document.getElementsByClassName("little-rectangle")[0].textContent = '';
+    interv = true
+  }
+}, 500)
+  </script>
 </body>
 </html>
